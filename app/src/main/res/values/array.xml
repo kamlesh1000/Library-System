@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bookSearch">
+        <item>Title</item>
+        <item>Author</item>
+        <item>Id</item>
+        <item>Section</item>
+    </string-array>
+
+<!--    <string-array name="searchId">
+        <item>COMP115</item>
+        <item>MATH806</item>
+        <item>PHAR780</item>
+        <item>MECH236</item>
+        <item>COMP230</item>
+        <item>COMP450</item>
+        <item>PHAR556</item>
+        <item>ELEC880</item>
+        <item>BIOT232</item>
+    </string-array>
+
+    <string-array name="searchTitle">
+        <item>My Social Science</item>
+        <item>Hari Bhadur</item>
+        <item>Digital Signal Processing</item>
+        <item>Algebra</item>
+        <item>Seto Dharti</item>
+        <item>KP Biography</item>
+        <item>Machine Learning</item>
+        <item>POPL</item>
+        <item>Artificial Intelligence</item>
+    </string-array>
+
+    <string-array name="searchAuthor">
+        <item>Kripa Phoju</item>
+        <item>Kamlesh Kunwar</item>
+        <item>Ayush K. Shah</item>
+        <item>Bibash Shrestha</item>
+        <item>Robin Ranabhat</item>
+        <item>Deepesh Shrestha</item>
+        <item>Beeshal Adhikari</item>
+        <item>Sunil K. KC</item>
+        <item>Manasi Kattel</item>
+    </string-array>
+
+    <string-array name="searchSection">
+        <item>Social</item>
+        <item>Electrodynamics</item>
+        <item>Science</item>
+        <item>Maths</item>
+        <item>Litreture</item>
+        <item>Politics</item>
+        <item>Fiction</item>
+        <item>Novel</item>
+        <item>Biography</item>
+    </string-array>-->
+
+</resources>

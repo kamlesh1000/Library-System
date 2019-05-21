@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainback"
+    tools:context=".books">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/noOfBookIssued"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Numer of Book Issued : "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/noOfBookIssuedValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="noOfBookIssuedValue"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/noOfBookIssued"
+            app:layout_constraintTop_toTopOf="@+id/noOfBookIssued" />
+
+        <TextView
+            android:id="@+id/remainingSlots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Remaining Slots : "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/noOfBookIssued"
+            app:layout_constraintTop_toBottomOf="@+id/noOfBookIssued" />
+
+        <TextView
+            android:id="@+id/remainingSlotsValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="remainingSlotsValue"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/remainingSlots"
+            app:layout_constraintTop_toTopOf="@+id/remainingSlots" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/remainingSlots">
+
+            <TextView
+                android:id="@+id/sn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="S.N."
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/bookIssued"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="Book Issued"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/sn"
+                app:layout_constraintTop_toTopOf="@+id/sn" />
+
+            <TextView
+                android:id="@+id/dueDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:text="Due Date"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/bookIssued"
+                app:layout_constraintTop_toTopOf="@+id/bookIssued" />
+
+            <TextView
+                android:id="@+id/line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:text="1."
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/sn"
+                app:layout_constraintTop_toBottomOf="@+id/sn" />
+
+            <TextView
+                android:id="@+id/book1Value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="book1Value"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/line1"
+                app:layout_constraintEnd_toEndOf="@+id/bookIssued"
+                app:layout_constraintStart_toStartOf="@+id/bookIssued"
+                app:layout_constraintTop_toTopOf="@+id/line1" />
+
+            <TextView
+                android:id="@+id/dueDate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Due Date1"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/dueDate"
+                app:layout_constraintStart_toStartOf="@+id/dueDate"
+                app:layout_constraintTop_toTopOf="@+id/book1Value" />
+
+            <TextView
+                android:id="@+id/line2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="2."
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/line1"
+                app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+            <TextView
+                android:id="@+id/book2Value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="book2Value"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/line2"
+                app:layout_constraintEnd_toEndOf="@+id/book1Value"
+                app:layout_constraintStart_toStartOf="@+id/book1Value"
+                app:layout_constraintTop_toTopOf="@+id/line2" />
+
+            <TextView
+                android:id="@+id/dueDate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Due Date2"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/dueDate1"
+                app:layout_constraintStart_toStartOf="@+id/dueDate1"
+                app:layout_constraintTop_toTopOf="@+id/book2Value" />
+
+            <TextView
+                android:id="@+id/line3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="3."
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/line2"
+                app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+            <TextView
+                android:id="@+id/book3Value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="book3Value"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/line3"
+                app:layout_constraintEnd_toEndOf="@+id/book2Value"
+                app:layout_constraintStart_toStartOf="@+id/book2Value"
+                app:layout_constraintTop_toTopOf="@+id/line3" />
+
+            <TextView
+                android:id="@+id/dueDate3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Due Date3"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/dueDate2"
+                app:layout_constraintStart_toStartOf="@+id/dueDate2"
+                app:layout_constraintTop_toTopOf="@+id/book3Value" />
+
+            <TextView
+                android:id="@+id/line4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="4."
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/line3"
+                app:layout_constraintTop_toBottomOf="@+id/line3" />
+
+            <TextView
+                android:id="@+id/book4Value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="book4Value"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/line4"
+                app:layout_constraintEnd_toEndOf="@+id/book3Value"
+                app:layout_constraintStart_toStartOf="@+id/book3Value"
+                app:layout_constraintTop_toTopOf="@+id/line4" />
+
+            <TextView
+                android:id="@+id/dueDate4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Due Date4"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/dueDate3"
+                app:layout_constraintStart_toStartOf="@+id/dueDate3"
+                app:layout_constraintTop_toTopOf="@+id/book4Value" />
+
+            <TextView
+                android:id="@+id/line5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="5."
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/line4"
+                app:layout_constraintTop_toBottomOf="@+id/line4" />
+
+            <TextView
+                android:id="@+id/book5Value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="book5Value"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/line5"
+                app:layout_constraintEnd_toEndOf="@+id/book4Value"
+                app:layout_constraintStart_toStartOf="@+id/book4Value"
+                app:layout_constraintTop_toTopOf="@+id/line5" />
+
+            <TextView
+                android:id="@+id/dueDate5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Due Date5"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/dueDate4"
+                app:layout_constraintStart_toStartOf="@+id/dueDate4"
+                app:layout_constraintTop_toTopOf="@+id/book5Value" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>
