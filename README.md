@@ -1,0 +1,2 @@
+# Library-System
+The complete Library system with a android application interface for students and Web interface for administration. This project contains the list of books  in the online database and students can search for the book with reference to the title, author, book_id and section in their application. The firebase push notification before 3 days of due date. Profile of students with books borrowed and their due date. 
