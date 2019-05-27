@@ -33,7 +33,7 @@ public class login extends AppCompatActivity {
     String url;
     Intent i;
 
-    String ip="raktadaan.000webhostapp.com";
+    String ip="librarysystem101.000webhostapp.com";
     String getProfile_URL = "http://"+ip+"/getProfile.php?studentId=";
     JSONArray result;
     String JSON_ARRAY = "result";
@@ -137,11 +137,13 @@ public class login extends AppCompatActivity {
         Log.e("apkflow","showJSON");
 
         try {
-            JSONObject jsonObject = new JSONObject(response);
+            Log.e("apkflow","try");
+
+            JSONObject jsonObject = new JSONObject(response.substring(response.indexOf("{"), response.lastIndexOf("}") + 1));
             result = jsonObject.getJSONArray(JSON_ARRAY);
             resultLength=result.length();
             JSONObject[] RaktadaanData=new JSONObject[resultLength];
-            Log.e("apkflow","resultLength"+Integer.toString(resultLength));
+            Log.e("apkflow","resultLength"+resultLength);
 
             if (result.length()==0)
             {

@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
             dueDate5 = format.parse(onlyDateDue5);
             DaysLeft5 = (dueDate5.getTime() - currentDate.getTime()) / (24*60*60*1000);
 
-        } catch (ParseException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
